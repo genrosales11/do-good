@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+// App is our main component at the top level of our App that references other components
+
 function App() {
   return (
     <div className="App">
@@ -21,5 +23,7 @@ function App() {
     </div>
   );
 }
+
+// Here we export the App component so that it can be made available in `index.js`
 
 export default App;
