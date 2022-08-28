@@ -12,7 +12,7 @@ const taskSchema = new Schema({
         required: true,
         maxLength: 30,
     },
-    valueIndex: {
+    taskValue: {
         type: Number,
         required: true,
         maxLength: 10,
