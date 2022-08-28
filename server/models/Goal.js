@@ -1,8 +1,12 @@
-// goal id, goal text, goal value
+// Goal ID, goal text, goal value
 
 const { Schema, model } = require('mongoose');
 
 const goalSchema = new Schema({
+    goalId: {
+        type: Schema.Types.ObjectId,
+        default: () => new Types.ObjectId(),
+    },
     goalText: {
         type: String,
         required: true,

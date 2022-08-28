@@ -1,8 +1,12 @@
-// Task_id
+// Task ID, task text, value index
 
 const { Schema, model } = require('mongoose');
 
 const taskSchema = new Schema({
+    taskId: {
+        type: Schema.Types.ObjectId,
+        default: () => new Types.ObjectId(),
+    },
     taskText: {
         type: String,
         required: true,
@@ -12,13 +16,8 @@ const taskSchema = new Schema({
         type: Number,
         required: true,
         maxLength: 10,
-    },
-    // Do we need to make an id or will it generate one automatically?
-    // Do we need to take in a category or do something else?
-    lastName: {
-        type: String,
-        required: true,
     }
+    // Do we need to take in a category or do something else?
 });
 
 const Task = model('Task', taskSchema);
