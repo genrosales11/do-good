@@ -4,7 +4,7 @@ import { FaList, FaHistory} from "react-icons/fa";
 import { FiHome, FiLogOut } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 import { TbLayoutSidebarRightCollapse, TbLayoutSidebarRightExpand } from "react-icons/tb";
-
+import turtle from "../../Components/images/turtle.png"
 
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css";
@@ -25,7 +25,8 @@ const Header = () => {
           <SidebarHeader>
           <div className="logotext">
               {}
-              <p>{menuCollapse ? "Logo" : "Big Logo"}</p>
+              <p>{menuCollapse ?  "🌍DO-GOOD" :  "🌍DO-GOOD"}</p>
+              <p>{menuCollapse ?  <img class="self" src={turtle} alt="Self" /> :  <img class="self" src={turtle} alt="Self" />}</p>
             </div>
             <div className="closemenu" onClick={menuIconClick}>
                 {}

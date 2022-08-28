@@ -47,7 +47,7 @@
 }
 
 #header .pro-sidebar-inner .pro-sidebar-layout ul {
-    padding: 0 5px;
+    padding: 0 px;
 }
 
 #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
@@ -78,4 +78,9 @@
     html {
         overflow: hidden;
     }
+}
+
+.self {
+    width: 50px;
+    height: 50px;
 }
