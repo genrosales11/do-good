@@ -42,12 +42,12 @@ const Header = () => {
           <SidebarContent>
             <Menu iconShape="square">
               <MenuItem active={true} icon={<FiHome />} >
-              <a href="/Home">Home</a>
+              <a href="/">Home</a>
               </MenuItem>
-              <MenuItem active={true} icon={<FaList />}> <a href="/Category">Category</a></MenuItem>
-              <MenuItem active={true} icon={<FaHistory />}><a href="/History">History</a></MenuItem>
+              <MenuItem active={true} icon={<FaList />}> <a href="/category">Category</a></MenuItem>
+              <MenuItem active={true} icon={<FaHistory />}><a href="/history">History</a></MenuItem>
             
-              <MenuItem active={true} icon={<RiPencilLine />}> <a href="/About">About Us</a></MenuItem>
+              <MenuItem active={true} icon={<RiPencilLine />}> <a href="/about">About Us</a></MenuItem>
            
             </Menu>
           </SidebarContent>
