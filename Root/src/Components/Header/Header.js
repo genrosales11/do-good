@@ -41,13 +41,13 @@ const Header = () => {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <MenuItem active={true} icon={<FiHome />}>
-                Home
+              <MenuItem active={true} icon={<FiHome />} >
+              <a href="/">Home</a>
               </MenuItem>
-              <MenuItem active={true} icon={<FaList />}>Category</MenuItem>
-              <MenuItem active={true} icon={<FaHistory />}>History</MenuItem>
+              <MenuItem active={true} icon={<FaList />}> <a href="/category">Category</a></MenuItem>
+              <MenuItem active={true} icon={<FaHistory />}><a href="/history">History</a></MenuItem>
             
-              <MenuItem active={true} icon={<RiPencilLine />}>About Us</MenuItem>
+              <MenuItem active={true} icon={<RiPencilLine />}> <a href="/about">About Us</a></MenuItem>
            
             </Menu>
           </SidebarContent>
