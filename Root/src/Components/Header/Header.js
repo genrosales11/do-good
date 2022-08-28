@@ -4,7 +4,7 @@ import { FaList, FaHistory} from "react-icons/fa";
 import { FiHome, FiLogOut } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 import { TbLayoutSidebarRightCollapse, TbLayoutSidebarRightExpand } from "react-icons/tb";
-
+import turtle from "../../Components/images/turtle.png"
 
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css";
@@ -17,6 +17,8 @@ const Header = () => {
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
 
+
+
   return (
     <>
       <div id="header">
@@ -25,7 +27,8 @@ const Header = () => {
           <SidebarHeader>
           <div className="logotext">
               {}
-              <p>{menuCollapse ? "Logo" : "Big Logo"}</p>
+              <p>{menuCollapse ?  "🌍DO-GOOD" :  "🌍DO-GOOD"}</p>
+              <p>{menuCollapse ?  <img class="self" src={turtle} alt="Self" /> :  <img class="self" src={turtle} alt="Self" />}</p>
             </div>
             <div className="closemenu" onClick={menuIconClick}>
                 {}
@@ -41,16 +44,16 @@ const Header = () => {
               <MenuItem active={true} icon={<FiHome />}>
                 Home
               </MenuItem>
-              <MenuItem icon={<FaList />}>Category</MenuItem>
-              <MenuItem icon={<FaHistory />}>History</MenuItem>
+              <MenuItem active={true} icon={<FaList />}>Category</MenuItem>
+              <MenuItem active={true} icon={<FaHistory />}>History</MenuItem>
             
-              <MenuItem icon={<RiPencilLine />}>About Us</MenuItem>
+              <MenuItem active={true} icon={<RiPencilLine />}>About Us</MenuItem>
            
             </Menu>
           </SidebarContent>
           <SidebarFooter>
             <Menu iconShape="square">
-              <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
+              <MenuItem active={true} icon={<FiLogOut />}>Logout</MenuItem>
             </Menu>
           </SidebarFooter>
         </ProSidebar>
@@ -58,6 +61,7 @@ const Header = () => {
     </>
   );
 };
+
 
 export default Header;
 
