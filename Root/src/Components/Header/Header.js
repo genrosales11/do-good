@@ -44,16 +44,16 @@ const Header = () => {
               <MenuItem active={true} icon={<FiHome />}>
                 Home
               </MenuItem>
-              <MenuItem icon={<FaList />}>Category</MenuItem>
-              <MenuItem icon={<FaHistory />}>History</MenuItem>
+              <MenuItem active={true} icon={<FaList />}>Category</MenuItem>
+              <MenuItem active={true} icon={<FaHistory />}>History</MenuItem>
             
-              <MenuItem icon={<RiPencilLine />}>About Us</MenuItem>
+              <MenuItem active={true} icon={<RiPencilLine />}>About Us</MenuItem>
            
             </Menu>
           </SidebarContent>
           <SidebarFooter>
             <Menu iconShape="square">
-              <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
+              <MenuItem active={true} icon={<FiLogOut />}>Logout</MenuItem>
             </Menu>
           </SidebarFooter>
         </ProSidebar>
