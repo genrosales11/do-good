@@ -5,9 +5,17 @@ import { FiHome, FiLogOut } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 import { TbLayoutSidebarRightCollapse, TbLayoutSidebarRightExpand } from "react-icons/tb";
 import turtle from "../../Components/images/turtle.png"
-
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css";
+import "./Home.css";
+import "./Category.css";
+import "./History.css";
+import "./About.css";
+import "./Login.css"
+import "./Signup.css"
+
+
+
 
 
 const Header = () => {
