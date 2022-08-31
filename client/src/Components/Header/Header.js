@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarFooter, SidebarContent,} from "react-pro-sidebar";
 import { FaList, FaHistory} from "react-icons/fa";
-import { FiHome, FiLogOut } from "react-icons/fi";
+import { FiHome, FiLogIn, FiLogOut } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 import { TbLayoutSidebarRightCollapse, TbLayoutSidebarRightExpand } from "react-icons/tb";
 import turtle from "../../Components/images/turtle.png"
@@ -60,12 +60,15 @@ const Header = () => {
             </Menu>
           </SidebarContent>
           <SidebarFooter>
+
           <Menu iconShape="square">
-              <MenuItem active={true} icon={<FiLogOut />}>Login</MenuItem>
+          <MenuItem active={true} icon={<FiLogIn />}> <a href="/login">Login</a></MenuItem>
+              {/* <MenuItem active={true} icon={<FaSignUp />}><a href="/signup">Signup</a></MenuItem> */}
+              {/* <MenuItem active={true} icon={<FiLogIn />}>Login</MenuItem> */}
             </Menu>
-            <Menu iconShape="square">
-              <MenuItem active={true} icon={<FiLogOut />}>signup</MenuItem>
-            </Menu>
+            {/* <Menu iconShape="square">
+              <MenuItem active={true} icon={<FiSignUp />}>signup</MenuItem>
+            </Menu> */}
             <Menu iconShape="square">
               <MenuItem active={true} icon={<FiLogOut />}>Logout</MenuItem>
             </Menu>
