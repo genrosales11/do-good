@@ -11,6 +11,7 @@ const typeDefs = gql`
     taskText: String
     taskValue: Int
     category: Category
+    complete: Boolean
   }
 
   type History {
@@ -62,7 +63,7 @@ const typeDefs = gql`
       goalText: String!
         // need to add how it gets an id and value (how are these different?)
     ): Goal
-    updateTask(_id: ID!, quantity: Int!): Task
+    updateTask(_id: ID!, complete: true): Task
     // needs to be only for user, not globally updated
     login(email: String!, password: String!): Auth
   }
