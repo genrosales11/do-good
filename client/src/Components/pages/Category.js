@@ -1,5 +1,11 @@
 export default function Category() {
     return (
-     <h1>Category</h1>
+
+    
+  <body class="categoryBody">
+    <header>
+ <h1>Categories</h1> 
+ </header>
+  </body>
     );
   }
