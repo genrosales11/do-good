@@ -39,7 +39,15 @@ const typeDefs = gql`
     user: User
   }
 
-
+  type Query {
+    categories: [Category]
+    tasks(category: ID, taskText: String): [Task]
+    history(): History
+    tasks(taskText: String): [Task]
+    task(_id: ID!): Task
+    user: User
+    goal(_id: ID!): Goal
+  }
 
   type Mutation {
     addUser(
