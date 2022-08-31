@@ -61,14 +61,6 @@ const Header = () => {
           </SidebarContent>
           <SidebarFooter>
 
-          <Menu iconShape="square">
-          <MenuItem active={true} icon={<FiLogIn />}> <a href="/login">Login</a></MenuItem>
-              {/* <MenuItem active={true} icon={<FaSignUp />}><a href="/signup">Signup</a></MenuItem> */}
-              {/* <MenuItem active={true} icon={<FiLogIn />}>Login</MenuItem> */}
-            </Menu>
-            {/* <Menu iconShape="square">
-              <MenuItem active={true} icon={<FiSignUp />}>signup</MenuItem>
-            </Menu> */}
             <Menu iconShape="square">
               <MenuItem active={true} icon={<FiLogOut />}>Logout</MenuItem>
             </Menu>
