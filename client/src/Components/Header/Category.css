@@ -1,3 +1,17 @@
 .categoryBody {
     text-align: center;
 }
+
+.categoryHeader {
+    background-color: rgb(174, 249, 138);
+    ;
+}
+
+.border1 {
+    background-color: green;
+}
+
+#border6 {
+    background-color: rgb(34, 13, 101);
+    text-align: center;
+}
