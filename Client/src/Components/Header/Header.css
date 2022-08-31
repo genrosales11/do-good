@@ -21,8 +21,8 @@
 }
 
 #header .pro-sidebar {
-    width: 100%;
-    min-width: 100%;
+    width: 80%;
+    min-width: 80%;
 }
 
 #header .pro-sidebar.collapsed {
@@ -91,5 +91,13 @@
 
 .categoryBody {
     align-items: center;
+    text-align: center;
+    background-color: #4eeed9;
+}
+
+.categoryHeader {
+    background-color: rgb(174, 249, 138);
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
