@@ -16,7 +16,12 @@ const taskSchema = new Schema({
         type: Number,
         required: true,
         maxLength: 10,
-    }
+    },
+    complete: {
+        type: Boolean,
+        default: false,
+    },
+    
     // Do we need to take in a category or do something else?
 });
 
