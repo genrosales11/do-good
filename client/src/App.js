@@ -3,6 +3,7 @@ import Home from './Components/pages/Home'
 import Category from './Components/pages/Category'
 import About  from './Components/pages/About'
 import DataHistory from './Components/pages/DataHistory'
+import Transportation from './Components/pages/Transportation'
 
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
         case "/about":
           component = <About />
           break
+          case "/transportation":
+            component = <Transportation />
+            break
   }
   return (
   
