@@ -18,7 +18,6 @@ import "./Signup.css"
 
 
 
-
 const Header = () => {
     const [menuCollapse, setMenuCollapse] = useState(false)
   const menuIconClick = () => {
@@ -81,5 +80,4 @@ const Header = () => {
 
 
 export default Header;
-
 
