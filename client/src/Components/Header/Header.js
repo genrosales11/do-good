@@ -60,6 +60,12 @@ const Header = () => {
             </Menu>
           </SidebarContent>
           <SidebarFooter>
+          <Menu iconShape="square">
+              <MenuItem active={true} icon={<FiLogOut />}>Login</MenuItem>
+            </Menu>
+            <Menu iconShape="square">
+              <MenuItem active={true} icon={<FiLogOut />}>signup</MenuItem>
+            </Menu>
             <Menu iconShape="square">
               <MenuItem active={true} icon={<FiLogOut />}>Logout</MenuItem>
             </Menu>
