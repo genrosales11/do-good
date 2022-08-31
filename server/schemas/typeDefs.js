@@ -40,6 +40,23 @@ const typeDefs = gql`
   }
 
 
+
+  type Mutation {
+    addUser(
+      firstName: String!
+      lastName: String!
+      username: String!
+      email: String!
+      password: String!
+    ): Auth
+    addTaskToHistory(tasks: [ID]!): History
+    addGoal(
+      goalText: String!
+        // need to add how it gets an id and value (how are these different?)
+    ): Goal
+    updateTask(_id: ID!, quantity: Int!): Task
+    // needs to be only for user, not globally updated
+    login(email: String!, password: String!): Auth
   }
 `;
 
