@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarFooter, SidebarContent,} from "react-pro-sidebar";
 import { FaList, FaHistory} from "react-icons/fa";
-import { FiHome, FiLogOut } from "react-icons/fi";
+import { FiHome, FiLogIn, FiLogOut } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 import { TbLayoutSidebarRightCollapse, TbLayoutSidebarRightExpand } from "react-icons/tb";
 import turtle from "../../Components/images/turtle.png"
@@ -61,6 +61,7 @@ const Header = () => {
             </Menu>
           </SidebarContent>
           <SidebarFooter>
+
             <Menu iconShape="square">
               <MenuItem active={true} icon={<FiLogOut />}>Logout</MenuItem>
             </Menu>
