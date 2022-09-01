@@ -5,6 +5,7 @@ import turtle from "../../Components/images/turtle.png"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 export default function Category() {
     return (
 
@@ -43,7 +44,7 @@ export default function Category() {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button href="/transportation" variant="primary">Go To Transportation</Button>
+        <Link to="/transportation" variant="primary">Go To Transportation</Link>
       </Card.Body>
 
       </Col>
