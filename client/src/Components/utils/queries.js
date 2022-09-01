@@ -32,7 +32,11 @@ export const QUERY_USER = gql`
   }
 `;
 
+// does it need to be per user? are we taking tasks a fancy way?
 export const QUERY_HISTORY = gql`
+{
+
+}
 `;
 
 export const QUERY_GOAL = gql`
