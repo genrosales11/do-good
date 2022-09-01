@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import { ProSidebar, Menu, MenuItem, SidebarHeader, SidebarFooter, SidebarContent,} from "react-pro-sidebar";
 import { FaList, FaHistory} from "react-icons/fa";
 import { FiHome, FiLogIn, FiLogOut } from "react-icons/fi";
@@ -50,12 +51,12 @@ const Header = () => {
           <SidebarContent>
             <Menu iconShape="square">
               <MenuItem active={true} icon={<FiHome />} >
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
               </MenuItem>
-              <MenuItem active={true} icon={<FaList />}> <a href="/category">Category</a></MenuItem>
-              <MenuItem active={true} icon={<FaHistory />}><a href="/history">History</a></MenuItem>
+              <MenuItem active={true} icon={<FaList />}> <Link to="/category">Category</Link></MenuItem>
+              <MenuItem active={true} icon={<FaHistory />}><Link to="/history">History</Link></MenuItem>
             
-              <MenuItem active={true} icon={<RiPencilLine />}> <a href="/about">About Us</a></MenuItem>
+              <MenuItem active={true} icon={<RiPencilLine />}> <Link to="/about">About Us</Link></MenuItem>
            
             </Menu>
           </SidebarContent>
@@ -63,8 +64,8 @@ const Header = () => {
 
 
           <Menu iconShape="square">
-          <MenuItem active={true} icon={<FiLogIn />}> <a href="/signup">Login</a></MenuItem>
-              {/* <MenuItem active={true} icon={<FaSignUp />}><a href="/signup">Signup</a></MenuItem> */}
+          <MenuItem active={true} icon={<FiLogIn />}> <Link to="/signup">Login</Link></MenuItem>
+              {/* <MenuItem active={true} icon={<FaSignUp />}><Link="/signup">Signup</a></MenuItem> */}
               {/* <MenuItem active={true} icon={<FiLogIn />}>Login</MenuItem> */}
             </Menu>
 
