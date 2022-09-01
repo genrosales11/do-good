@@ -35,12 +35,23 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_TASK = gql`
+mutation addTask(
+    $taskText: String!
+    $taskValue: Number
+  ) {
+    addTask(
+      taskText: $taskText
+      taskValue: $taskValue
+    )
 `;
 
 export const ADD_GOAL = gql`
 `;
 
 export const UPDATE_TASK = gql`
+`;
+
+export const ADD_TASK_TO_HISTORY = gql`
 `;
 
 export const REMOVE_TASK = gql`
