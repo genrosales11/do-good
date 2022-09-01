@@ -48,7 +48,13 @@ mutation addTask(
 export const ADD_GOAL = gql`
 `;
 
+// check if this. is right at all or if we need this in mutations (and not just reducer)
 export const UPDATE_TASK = gql`
+ mutation updateTask($tasks: [ID]!) {
+    updateTask(tasks: $tasks) {
+        complete
+    }
+ }
 `;
 
 export const ADD_TASK_TO_HISTORY = gql`
@@ -64,6 +70,7 @@ export const ADD_TASK_TO_HISTORY = gql`
   }
 `;
 
+// are our removes in mutations? or in reducers?
 export const REMOVE_TASK = gql`
 `;
 
