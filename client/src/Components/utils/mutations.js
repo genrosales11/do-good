@@ -46,6 +46,15 @@ mutation addTask(
 `;
 
 export const ADD_GOAL = gql`
+ mutation addGoal(
+    $goalText: String!
+    $goalValue: Number!
+ ) {
+    addGoal(
+        goalText: $goalText
+        goalValue: $goalValue
+    )
+ }
 `;
 
 // check if this. is right at all or if we need this in mutations (and not just reducer)
