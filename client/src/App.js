@@ -5,6 +5,7 @@ import About  from './Components/pages/About'
 import DataHistory from './Components/pages/DataHistory'
 import Transportation from './Components/pages/Transportation'
 
+import './App.css';
 
 function App() {
   let component
