@@ -7,6 +7,8 @@ export const QUERY_TASK = gql`
     tasks {
       _id
       taskText
+      taskValue
+      complete
     }
 }
 `;
@@ -18,6 +20,13 @@ export const QUERY_USER = gql`
       tasks {
         _id
         taskText
+        taskValue
+        complete
+      }
+      goals {
+        _id
+        goalText
+        goalValue
       }
     }
   }
@@ -27,4 +36,11 @@ export const QUERY_HISTORY = gql`
 `;
 
 export const QUERY_GOAL = gql`
+{
+    goal {
+        _id
+        goalText
+        goalValue
+    }
+}
 `;
