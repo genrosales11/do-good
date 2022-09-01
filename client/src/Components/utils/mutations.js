@@ -52,6 +52,16 @@ export const UPDATE_TASK = gql`
 `;
 
 export const ADD_TASK_TO_HISTORY = gql`
+  mutation addTaskToHistory($tasks: [ID]!) {
+    addTaskToHistory(tasks: $tasks) {
+      tasks {
+        _id
+        taskText
+        taskValue
+        complete
+      }
+    }
+  }
 `;
 
 export const REMOVE_TASK = gql`
