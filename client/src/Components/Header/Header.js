@@ -64,13 +64,12 @@ const Header = () => {
 
 
           <Menu iconShape="square">
-          <MenuItem active={true} icon={<FiLogIn />}> <Link to="/signup">Login</Link></MenuItem>
-              {/* <MenuItem active={true} icon={<FaSignUp />}><Link="/signup">Signup</a></MenuItem> */}
-              {/* <MenuItem active={true} icon={<FiLogIn />}>Login</MenuItem> */}
+          <MenuItem active={true} icon={<FiLogIn />}> <Link to="/signup"> Signup</Link></MenuItem>
+          <MenuItem active={true} icon={<FiLogIn />}> <Link to="/login"> Login</Link></MenuItem>
             </Menu>
 
             <Menu iconShape="square">
-              <MenuItem active={true} icon={<FiLogOut />}>Logout</MenuItem>
+              <MenuItem active={true} icon={<FiLogOut />}><Link to="/logout">Logout</Link></MenuItem>
             </Menu>
           </SidebarFooter>
         </ProSidebar>
