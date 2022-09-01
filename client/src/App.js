@@ -4,6 +4,10 @@ import Category from './Components/pages/Category'
 import About  from './Components/pages/About'
 import DataHistory from './Components/pages/DataHistory'
 import Transportation from './Components/pages/Transportation'
+import Signup from './Components/pages/Signup'
+import Login from './Components/pages/Login'
+import Logout from './Components/pages/Logout'
+
 
 import {
   BrowserRouter,
@@ -47,6 +51,12 @@ function App() {
       <Route path="/about" element={<About/>}>
       </Route>
       <Route path="/transportation" element={<Transportation />}>
+      </Route>
+      <Route path="/signup" element={<Signup />}>
+      </Route>
+      <Route path="/login" element={<Login />}>
+      </Route>
+      <Route path="/logout" element={<Logout />}>
       </Route>
     </Routes>
         {/* {component} */}
