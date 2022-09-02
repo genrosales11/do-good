@@ -1,7 +1,3 @@
-.nav {
-    border: 10px;
-   
-}
 
 .categoryBody {
     text-align: center;
@@ -24,7 +20,18 @@
     text-align: center;
 }
 
-.Container {
+.container {
+    background-color: rgba(100, 170, 254, 0.621);
+    height: 1000px;
+    width: auto;
+    align-items: center;
     border-radius: 10px;
-    background-color: black;
+}
+
+.Card.Body {
+    border-radius: 10px;
+}
+
+.Button {
+    color: white;
 }
