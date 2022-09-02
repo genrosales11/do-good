@@ -15,7 +15,7 @@ type Task {
 }
  type User {
    _id: ID
- firstName: String
+    firstName: String
     lastName: String
     username: String
     password: String

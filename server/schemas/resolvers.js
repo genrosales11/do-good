@@ -9,7 +9,7 @@ const resolvers = {
             return Task.find({});
         },
 
-        user: async (parent) => {
+        users: async (parent) => {
             return User.find({});
         },
 
