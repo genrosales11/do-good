@@ -27,7 +27,8 @@ type Auth {
    }
 type Query {
  
-  tasks(category: ID, taskText: String): [Task]
+  tasks: [Task]
+  users: [User]
 
  
  
