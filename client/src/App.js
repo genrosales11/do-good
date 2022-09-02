@@ -1,3 +1,14 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+        } from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
+
+
 import Header from './Components/Header/Header'
 import Home from './Components/pages/Home'
 import Category from './Components/pages/Category'
@@ -9,39 +20,36 @@ import Login from './Components/pages/Login'
 import Logout from './Components/pages/Logout'
 import Recycle from './Components/pages/Recycle'
 import Trash from './Components/pages/Trash'
-
-
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-
 import './App.css';
 
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
+
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
+
+
+
+
 function App() {
-  // let component
-  // switch(window.location.pathname){
-  //   case "/":
-  //     component = <Home />
-  //   break
-  //   case "/category":
-  //     component = <Category />
-  //     break
-  //     case "/history":
-  //       component = <DataHistory />
-  //       break
-  //       case "/about":
-  //         component = <About />
-  //         break
-  //         case "/transportation":
-  //           component = <Transportation />
-  //           break
-  // }
-  return (
   
+  return (
+  <ApolloProvider client={client}>
     <div className="App">
-    <BrowserRouter>
+    <Router>
         <Header />
     <Routes>
       <Route path="/" element={<Home />}>
@@ -66,8 +74,9 @@ function App() {
       </Route>
     </Routes>
         {/* {component} */}
-        </BrowserRouter>
+        </Router>
     </div>
+    </ApolloProvider>
   );
 }
 
