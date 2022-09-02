@@ -1,0 +1,23 @@
+[
+    {
+        "firstName": "Damien",
+        "lastName": "Armstrong",
+        "username": "pirosvs",
+        "email": "mail@mail.com",
+        "password": "passpass25"
+    },
+    {
+        "firstName": "Rosy",
+        "lastName": "Shoreline",
+        "username": "strawberrysheep",
+        "email": "berrysheep@mail.com",
+        "password": "password2345"
+    },
+    {
+        "firstName": "Alana",
+        "lastName": "Calico",
+        "username": "branchingoff",
+        "email": "branching@mail.com",
+        "password": "wordword0987"
+    }
+]
