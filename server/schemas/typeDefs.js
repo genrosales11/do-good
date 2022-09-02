@@ -30,7 +30,6 @@ type Query {
   tasks(category: ID, taskText: String): [Task]
 
  
- 
 }
 type Mutation{
   login(email: String!, password: String!): Auth

@@ -1,4 +1,11 @@
 
+
+.nav {
+    border: 10px;
+   
+}
+
+
 .categoryBody {
     text-align: center;
     
@@ -34,4 +41,9 @@
 
 .Button {
     color: white;
+
+.Container {
+    border-radius: 10px;
+    background-color: black;
+
 }
