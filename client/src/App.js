@@ -7,6 +7,8 @@ import Transportation from './Components/pages/Transportation'
 import Signup from './Components/pages/Signup'
 import Login from './Components/pages/Login'
 import Logout from './Components/pages/Logout'
+import Recycle from './Components/pages/Recycle'
+import Trash from './Components/pages/Trash'
 
 
 import {
@@ -51,6 +53,10 @@ function App() {
       <Route path="/about" element={<About/>}>
       </Route>
       <Route path="/transportation" element={<Transportation />}>
+      </Route>
+      <Route path="/trash" element={<Trash />}>
+      </Route>
+      <Route path="/recycle" element={<Recycle/>}>
       </Route>
       <Route path="/signup" element={<Signup />}>
       </Route>

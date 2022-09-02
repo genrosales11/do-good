@@ -1,5 +1,4 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import turtle from "../../Components/images/turtle.png"
 import Container from 'react-bootstrap/Container';
@@ -25,12 +24,12 @@ export default function Category() {
         <Col xs={6}>2 of 3
         <Card.Img variant="top" src={turtle} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Recycle</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Link to="/recycle">Go to Recycle</Link>
       </Card.Body>
         
         </Col>
@@ -44,7 +43,7 @@ export default function Category() {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Link to="/transportation" variant="primary">Go To Transportation</Link>
+        <Link to="/transportation">Go To Transportation</Link>
       </Card.Body>
 
       </Col>
@@ -53,12 +52,12 @@ export default function Category() {
         <Col>3 of 3
          <Card.Img variant="top" src={turtle} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Pick up Trash</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Link to="/trash">Go to Trash Task</Link>
       </Card.Body>
         
         
