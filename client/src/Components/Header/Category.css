@@ -1,10 +1,18 @@
+.nav {
+    border: 10px;
+   
+}
+
 .categoryBody {
     text-align: center;
+    
 }
 
 .categoryHeader {
     background-color: rgb(174, 249, 138);
-    ;
+    height: 90px;
+    width: 100%;
+    
 }
 
 .border1 {
@@ -14,4 +22,9 @@
 #border6 {
     background-color: rgb(34, 13, 101);
     text-align: center;
+}
+
+.Container {
+    border-radius: 10px;
+    background-color: black;
 }
