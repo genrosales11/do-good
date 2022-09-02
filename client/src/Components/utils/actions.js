@@ -1,0 +1,5 @@
+export const UPDATE_TASKS = "UPDATE_TASKS";
+export const ADD_TASK_TO_HISTORY = "ADD_TASK_TO_HISTORY";
+
+export const REMOVE_TASK = "REMOVE_TASK";
+export const REMOVE_GOAL = "REMOVE_GOAL";
