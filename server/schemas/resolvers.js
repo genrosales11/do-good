@@ -1,5 +1,5 @@
 const { Task, Goal, User } = require('../models');
-const {signToken} = require('../utils/auth')
+const { signToken } = require('../utils/auth')
 
 const resolvers = {
     Query: {
@@ -20,29 +20,41 @@ const resolvers = {
         // },
     },
 
-     Mutation: {
-    //     addTask: async (parent, { taskText, userId }) => {
-    //         return userTask.create({ taskText, userId });
-    //     },
+    Mutation: {
+        //     addTask: async (parent, { taskText, userId }) => {
+        //         return userTask.create({ taskText, userId });
+        //     },
 
-    //     addGoal: async (parent, { goalId, userId }) => {
-    //         return userGoal.create({ goalId, userId });
-    //     },
+        //     addGoal: async (parent, { goalId, userId }) => {
+        //         return userGoal.create({ goalId, userId });
+        //     },
 
-    //     removeTask: async (parent, { taskId, userId }) => {
-    //         return userTask.findOneAndDelete({ taskId, userId });
-    //     },
+        //     removeTask: async (parent, { taskId, userId }) => {
+        //         return userTask.findOneAndDelete({ taskId, userId });
+        //     },
 
-    //     removeGoal: async (parent, { gaolId, userId }) => {
-    //         return userGoal.findOneAndDelete({ goalId, userId });
-    //     },
-    addUser: async(parent, args)=>{
-        const user = await User.create(args)
-        const token = signToken(user)
-        return{
-            token, user
+        //     removeGoal: async (parent, { gaolId, userId }) => {
+        //         return userGoal.findOneAndDelete({ goalId, userId });
+        //     },
+        addUser: async (parent, args) => {
+            console.log(args)
+            const user = await User.create(args)
+            const token = signToken(user)
+            return {
+                token, user
+            }
+        },
+
+        login: async (parent, { email, password }) => {
+            const user = await User.findOne({ email })
+            if (user.isCorrectPassword(password)) {
+                const token = signToken(user)
+                return {
+                    token, user
+                }
+            }
+            // bounces back/ gives error
         }
-    }
 
     },
 
