@@ -1,16 +1,16 @@
 // Task ID, task text, value index
 
-const { Schema, model } = require('mongoose');
+const { Schema, Types, model } = require('mongoose');
 
 const taskSchema = new Schema({
     taskId: {
-        type: Schema.Types.ObjectId,
+        type: Types.ObjectId,
         default: () => new Types.ObjectId(),
     },
     taskText: {
         type: String,
         required: true,
-        maxLength: 30,
+        maxLength: 100,
     },
     taskValue: {
         type: Number,
@@ -27,4 +27,4 @@ const taskSchema = new Schema({
 
 const Task = model('Task', taskSchema);
 
-module.exports = taskSchema
+module.exports = { Task, taskSchema };

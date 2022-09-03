@@ -1,10 +1,16 @@
+const { AuthenticationError } = require('apollo-server-express');
 const { Task, Goal, User } = require('../models');
 const { signToken } = require('../utils/auth')
 
 const resolvers = {
     Query: {
-        tasks: async () => {
-            return Task.find().sort({ createdAt: -1 });
+        tasks: async (parent) => {
+            // return Task.find().sort({ createdAt: -1 });
+            return Task.find({});
+        },
+
+        users: async (parent) => {
+            return User.find({});
         },
 
         // task: async (parent, { taskId }) => {
@@ -29,9 +35,12 @@ const resolvers = {
         //         return userGoal.create({ goalId, userId });
         //     },
 
-        //     removeTask: async (parent, { taskId, userId }) => {
-        //         return userTask.findOneAndDelete({ taskId, userId });
-        //     },
+        // need to find individual user and remove task id from user list of tasks, return updated user
+            // removeTask: async (parent, { taskId, userId }) => {
+            //     return User.findByIdUpdate(userId, { $pull : { tasks : taskId }});
+                
+            //     // return Task.findOneAndDelete({ taskId, userId });
+            // },
 
         //     removeGoal: async (parent, { gaolId, userId }) => {
         //         return userGoal.findOneAndDelete({ goalId, userId });

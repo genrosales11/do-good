@@ -15,7 +15,7 @@ type Task {
 }
  type User {
    _id: ID
- firstName: String
+    firstName: String
     lastName: String
     username: String
     password: String
@@ -27,7 +27,8 @@ type Auth {
    }
 type Query {
  
-  tasks(category: ID, taskText: String): [Task]
+  tasks: [Task]
+  users: [User]
 
  
 }
@@ -40,6 +41,8 @@ type Mutation{
        email: String!
        password: String!
       ): Auth
+
+  removeTask(taskId: ID!, userID: ID!): User
 }
   
 `;
