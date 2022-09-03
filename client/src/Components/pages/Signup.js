@@ -15,6 +15,7 @@ const Signup = () => {
   return (
 
     <Form className='signUp'>
+      Signup
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
