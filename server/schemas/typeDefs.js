@@ -42,6 +42,8 @@ type Mutation{
        email: String!
        password: String!
       ): Auth
+
+  removeTask(taskId: ID!, userID: ID!): User
 }
   
 `;

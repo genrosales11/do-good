@@ -35,9 +35,12 @@ const resolvers = {
         //         return userGoal.create({ goalId, userId });
         //     },
 
-        //     removeTask: async (parent, { taskId, userId }) => {
-        //         return userTask.findOneAndDelete({ taskId, userId });
-        //     },
+        // need to find individual user and remove task id from user list of tasks, return updated user
+            // removeTask: async (parent, { taskId, userId }) => {
+            //     return User.findByIdUpdate(userId, { $pull : { tasks : taskId }});
+                
+            //     // return Task.findOneAndDelete({ taskId, userId });
+            // },
 
         //     removeGoal: async (parent, { gaolId, userId }) => {
         //         return userGoal.findOneAndDelete({ goalId, userId });
