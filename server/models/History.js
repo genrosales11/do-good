@@ -1,5 +1,5 @@
 // History ID, date
-const taskSchema = require('./Task');
+const { Task, taskSchema } = require('./Task');
 const { Schema, model } = require('mongoose');
 
 const historySchema = new Schema({

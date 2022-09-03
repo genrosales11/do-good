@@ -1,5 +1,5 @@
 const User = require('./User');
-const Task = require('./Task');
+const { Task, taskSchema } = require('./Task');
 const History = require('./History');
 const Goal = require('./Goal');
 
