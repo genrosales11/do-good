@@ -1,8 +1,8 @@
 import Badge from 'react-bootstrap/Badge';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Container from 'react-bootstrap/Container';
-import { IconName } from "react-icons/bs";
-import { FaList, FaHistory} from "react-icons/fa";
+// import { IconName } from "react-icons/bs";
+// import { FaList, FaHistory} from "react-icons/fa";
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 
