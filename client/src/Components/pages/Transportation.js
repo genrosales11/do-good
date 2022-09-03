@@ -1,10 +1,8 @@
-import Badge from 'react-bootstrap/Badge';
+
 import ListGroup from 'react-bootstrap/ListGroup';
 import Container from 'react-bootstrap/Container';
-// import { IconName } from "react-icons/bs";
-// import { FaList, FaHistory} from "react-icons/fa";
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+import { FaRecycle  } from "react-icons/fa";
+import Button from 'react-bootstrap/esm/Button';
 
 function DefaultExample() {
   return (
@@ -18,9 +16,7 @@ function DefaultExample() {
           <div className="fw-bold">Clean containers out before recycling.</div>
           
         </div>
-        <Badge bg="primary" pill>
-          DONE
-        </Badge>
+        <Button active={true} icon={<FaRecycle/>}> DONE </Button>
       </ListGroup.Item>
       <ListGroup.Item
         as="li"
@@ -30,9 +26,7 @@ function DefaultExample() {
           <div className="fw-bold">Don't "recycle" or throw out food</div>
           
         </div>
-        <Badge bg="primary" pill>
-          DONE
-        </Badge>
+        <Button active={true} icon={<FaRecycle/>}> DONE </Button>
       </ListGroup.Item>
       <ListGroup.Item
         as="li"
@@ -42,9 +36,7 @@ function DefaultExample() {
           <div className="fw-bold">Let everything dry before recycling it</div>
           
         </div>
-        <Badge bg="primary" pill>
-         DONE
-        </Badge>
+        <Button active={true} icon={<FaRecycle/>}> DONE </Button>
       </ListGroup.Item>
     </ListGroup>
     </Container>
