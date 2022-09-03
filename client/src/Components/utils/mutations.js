@@ -9,6 +9,7 @@ mutation addTask(
       taskText: $taskText
       taskValue: $taskValue
     )
+    }
 `;
 
 export const ADD_GOAL = gql`
