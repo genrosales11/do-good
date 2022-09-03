@@ -1,0 +1,38 @@
+[
+    {
+        "taskText": "Pick up trash around your neighborhood",
+        "taskValue": "1"
+    },
+    {
+        "taskText": "Pick up trash by your nearest body of water",
+        "taskValue": "1"
+    },
+    {
+        "taskText": "Pick up trash elsewhere",
+        "taskValue": "1"
+    },
+    {
+        "taskText": "Check out your city's recycling policy",
+        "taskValue": "1"
+    },
+    {
+        "taskText": "Create a recycling chart for your house or workplace",
+        "taskValue": "2"
+    },
+    {
+        "taskText": "Rinse out glass and cans so they can be recycled",
+        "taskValue": "1"
+    },
+    {
+        "taskText": "Take bike instead of car",
+        "taskValue": "1"
+    },
+    {
+        "taskText": "Take public transit instead of car",
+        "taskValue": "1"
+    },
+    {
+        "taskText": "Share a ride with someone instead of each going separately",
+        "taskValue": "1"
+    }
+]

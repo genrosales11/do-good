@@ -21,6 +21,7 @@ export default function Category() {
 //  </header>
 //  <main>
 
+
  <Container>
       <Row>
         {/* <Col>1 of 3
