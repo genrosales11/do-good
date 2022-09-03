@@ -9,11 +9,11 @@ function DefaultExample() {
         className="d-flex justify-content-between align-items-start"
       >
         <div className="ms-2 me-auto">
-          <div className="fw-bold">Subheading</div>
-          Cras justo odio
+          <div className="fw-bold">Clean containers out before recycling.</div>
+          
         </div>
         <Badge bg="primary" pill>
-          14
+          DONE
         </Badge>
       </ListGroup.Item>
       <ListGroup.Item
@@ -21,11 +21,11 @@ function DefaultExample() {
         className="d-flex justify-content-between align-items-start"
       >
         <div className="ms-2 me-auto">
-          <div className="fw-bold">Subheading</div>
-          Cras justo odio
+          <div className="fw-bold">Don't "recycle" or throw out food</div>
+          
         </div>
         <Badge bg="primary" pill>
-          14
+          DONE
         </Badge>
       </ListGroup.Item>
       <ListGroup.Item
@@ -33,11 +33,11 @@ function DefaultExample() {
         className="d-flex justify-content-between align-items-start"
       >
         <div className="ms-2 me-auto">
-          <div className="fw-bold">Subheading</div>
-          Cras justo odio
+          <div className="fw-bold">Let everything dry before recycling it</div>
+          
         </div>
         <Badge bg="primary" pill>
-          14
+         DONE
         </Badge>
       </ListGroup.Item>
     </ListGroup>
@@ -45,9 +45,3 @@ function DefaultExample() {
 }
 
 export default DefaultExample;
-
-// export default function Recycle() {
-//     return (
-//      <h1>Recycle</h1>
-//     );
-//   }
