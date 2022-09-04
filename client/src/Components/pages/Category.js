@@ -67,45 +67,39 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import recycle from "../images/recycle.png";
+import trash from "../images/trash.png";
+import transportation from "../images/transportaion.png";
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom'
 
 const Categories = () => {
 
   return (
-    <Carousel style={{ width: '100% '}} variant="dark">
+    <Carousel style={{ width: '80%'}} variant="dark">
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-50"
           src={recycle}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+        <Button variant="info"> <Link to="/recycle">Go to Recycle</Link></Button>
+       
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
+          className="d-block w-60"
+          src={trash}
           alt="Second slide"
         />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+         <Button variant="info"> <Link to="/trash">Go to Recycle</Link></Button>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+          className="d-block w-60"
+          src={transportation}
           alt="Third slide"
         />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+       <Button variant="info"> <Link to="/transportation">Transportaion</Link></Button>
       </Carousel.Item>
     </Carousel>
   );
