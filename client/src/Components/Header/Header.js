@@ -12,9 +12,9 @@ import "./Home.css";
 import "./Category.css";
 import "./History.css";
 import "./About.css";
-import "./Login.css"
-import "./Signup.css"
-
+import "./Login.css";
+import "./Signup.css";
+import "./Recycle.css"
 
 
 
