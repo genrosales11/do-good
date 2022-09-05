@@ -138,7 +138,7 @@ export default function App() {
           <img
             className="d-block w-60" src={trash} style={{ height: 555 }}
             alt="trash"/>
-          <Button variant="info"> <Link to="/trash">Go to Recycle</Link></Button>
+          <Button variant="info"> <Link to="/trash">Pick up trash</Link></Button>
           <Carousel.Caption>
             <h3>Pick up trash</h3>
             <p>Every piece of litter intercepted from the beach is one less piece of
@@ -149,7 +149,7 @@ export default function App() {
           <img
             className="d-block w-60" src={transportation} style={{ height: 505 }}
             alt="trash"/>
-          <Button variant="info"> <Link to="/transportation">Go to Recycle</Link></Button>
+          <Button variant="info"> <Link to="/transportation">Reduce Your Carbon Footprint</Link></Button>
           <Carousel.Caption>
             <h3>Reduce Your Carbon Footprint</h3>
             <p> Cycling improves cardio-vascular and aerobic fitness, lowers blood pressure, 
