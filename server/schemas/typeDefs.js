@@ -20,6 +20,7 @@ type Task {
   username: String
   password: String
   email: String
+  tasks: [Task]
 }
 
 type Auth {
@@ -43,7 +44,7 @@ type Mutation{
     password: String!
   ): Auth
   updateTask(_id: ID!, userId: ID!, complete: Boolean!): User
-  removeTask(taskId: ID!, userID: ID!): User
+  removeTask(taskId: ID!, userId: ID!): User
 } 
 `;
 
