@@ -1,5 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { Task, Goal, User } = require('../models');
+const { Types } = require('mongoose')
 const { signToken } = require('../utils/auth')
 
 const resolvers = {
@@ -44,24 +45,31 @@ const resolvers = {
                 }
             }
             // bounces back/ gives error
-        }
+        },
  
-    },
- 
-    // updateTask: async (parent, {taskId, userId}) => {
-    //     return User.findByIdAndUpdate(userId, {});
-    // }    
+        removeTask: async (parent, { taskId, userId }) => {
+            console.log("User id: " + userId + "task Id" +  taskId);
+            const user = await User.findByIdAndUpdate(userId, { $pull : { tasks : {_id : taskId } } });
+            return user;
+        },
+
+        updateTask: async (parent, {taskId, userId, complete}) => {
+            var user = await User.findById(userId);
+            var newTasks = user.tasks;
+            for( task in tasks) { //  task in tasks) {
+                if (task._id == taskId) {
+                    // do some update to the task
+                    // set complete to true
+                    complete = true;
+                }
+            }
+            return User.findByIdAndUpdate(userId, {$set : {tasks: newTasks}});
+        },
+    },   
    
-    // need to find individual user and remove task id from user list of tasks, return updated user
-        // removeTask: async (parent, { taskId, userId }) => {
-        //     return User.findByIdUpdate(userId, { $pull : { tasks : taskId }});
-           
-        //     // return Task.findOneAndDelete({ taskId, userId });
-        // },
- 
-        //     addTask: async (parent, { taskText, userId }) => {
-        //         return userTask.create({ taskText, userId });
-        //     },
+    //addTask: async (parent, { taskText, userId }) => {
+    //    return userTask.create({ taskText, userId });
+    //},
  
         //     addGoal: async (parent, { goalId, userId }) => {
         //         return userGoal.create({ goalId, userId });
