@@ -1,50 +1,32 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { Task, Goal, User } = require('../models');
+const { Types } = require('mongoose')
 const { signToken } = require('../utils/auth')
 
 const resolvers = {
     Query: {
         tasks: async (parent) => {
-            // return Task.find().sort({ createdAt: -1 });
             return Task.find({});
         },
-
+ 
         users: async (parent) => {
             return User.find({});
         },
-
-        // task: async (parent, { taskId }) => {
-        //     return Task.findOne({ _id: taskId });
-        // },
-
+ 
+        task: async (parent, { _id }) => {
+            return Task.findById(_id);
+        },
+ 
         // goals: async () => {
         //     return Goal.find().sort({ createdAt: -1 });
         // },
-
+ 
         // goal: async (parent, { goalId }) => {
         //     return Goal.findOne({ _id: goalId });
         // },
     },
-
+ 
     Mutation: {
-        //     addTask: async (parent, { taskText, userId }) => {
-        //         return userTask.create({ taskText, userId });
-        //     },
-
-        //     addGoal: async (parent, { goalId, userId }) => {
-        //         return userGoal.create({ goalId, userId });
-        //     },
-
-        // need to find individual user and remove task id from user list of tasks, return updated user
-            // removeTask: async (parent, { taskId, userId }) => {
-            //     return User.findByIdUpdate(userId, { $pull : { tasks : taskId }});
-                
-            //     // return Task.findOneAndDelete({ taskId, userId });
-            // },
-
-        //     removeGoal: async (parent, { gaolId, userId }) => {
-        //         return userGoal.findOneAndDelete({ goalId, userId });
-        //     },
         addUser: async (parent, args) => {
             console.log(args)
             const user = await User.create(args)
@@ -53,7 +35,7 @@ const resolvers = {
                 token, user
             }
         },
-
+ 
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email })
             if (user.isCorrectPassword(password)) {
@@ -63,9 +45,39 @@ const resolvers = {
                 }
             }
             // bounces back/ gives error
-        }
+        },
+ 
+        removeTask: async (parent, { taskId, userId }) => {
+            console.log("User id: " + userId + "task Id" +  taskId);
+            const user = await User.findByIdAndUpdate(userId, { $pull : { tasks : {_id : taskId } } });
+            return user;
+        },
 
-    },
+        updateTask: async (parent, {taskId, userId, complete}) => {
+            var user = await User.findById(userId);
+            var newTasks = user.tasks;
+            for( task in tasks) { //  task in tasks) {
+                if (task._id == taskId) {
+                    // do some update to the task
+                    // set complete to true
+                    complete = true;
+                }
+            }
+            return User.findByIdAndUpdate(userId, {$set : {tasks: newTasks}});
+        },
+    },   
+   
+    //addTask: async (parent, { taskText, userId }) => {
+    //    return userTask.create({ taskText, userId });
+    //},
+ 
+        //     addGoal: async (parent, { goalId, userId }) => {
+        //         return userGoal.create({ goalId, userId });
+        //     },
+ 
+        //     removeGoal: async (parent, { gaolId, userId }) => {
+        //         return userGoal.findOneAndDelete({ goalId, userId });
+        //     },
 
 };
 module.exports = resolvers
