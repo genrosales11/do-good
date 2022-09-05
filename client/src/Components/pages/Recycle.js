@@ -76,92 +76,77 @@
 
 // export default DefaultExample;
 
+import React from "react";
+ import Card from 'react-bootstrap/Card';
+ import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-// import React from 'react';
-// import 'bulma/css/bulma.min.css';
+import Button from 'react-bootstrap/Button';
+import plastic from "../images/plastic.png";
+import can from "../images/can.png";
+import metal from "../images/metal.png"
 
 
-// import { Form } from 'react-bulma-components';
+export default function Category() {
+    return (
+ <Container>
+      <Row>
+      
+    {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+   <Col sm={ 4}>
+    <Card style={{ width: '18rem' }}>
+       <Card.Img variant="top" src={plastic}/>
+       <Card.Body>
+       <Card.Title>Recycle Plastic</Card.Title>
+         <Card.Text>
+         Plastics recycling keeps still-useful materials out of landfills and encourages businesses
+          to develop new and innovative products made from them.
+         </Card.Text>
+         <Button variant="info"> DONE </Button>
+       </Card.Body>
+     </Card>
+     </Col>
+    {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+     
+  <Col sm={ 4 }>
+     <Card style={{ width: '18rem' }}>
+       <Card.Img variant="top" src={can} />
+       <Card.Body>
+       <Card.Title>Aluminum Cans</Card.Title>
+         <Card.Text>
+         Recycling aluminum saves up to 95% of the energy wasted when manufacturing cans from new, raw materials.
+         </Card.Text>
+         <Button variant="info"> DONE</Button>
+       </Card.Body>
+     </Card>
+     </Col>
+  {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+  
+     <Col sm={ 4 }>
+     <Card style={{ width: '18rem'}}>
+       <Card.Img variant="top" src={metal} />
+       <Card.Body>
+         <Card.Title>Recycle Metal</Card.Title>
+         <Card.Text>
+         steel recycling efforts save 75 percent of the overall energy used in production from
+          raw materials. This has huge benefits in the fight to save natural resources, and prevent 
+          excess greenhouse gas emissions 
+         </Card.Text>
+        <Button variant="info"> DONE </Button>
+   
+       </Card.Body>
+     </Card>
+         </Col>
 
-// const { Box, Block, Notification, } = Form;
+     </Row>
+     </Container>
 
-// export default function Recycle () {
-//     return (
-// <>
-//     <Box>
-//     <React.Fragment key=".0">
-//       <Block>
-//         <Notification color="info">
-//           Some text
-//         </Notification>
-//       </Block>
-//       <Block>
-//         <Notification color="success">
-//           Some more text
-//         </Notification>
-//       </Block>
-//       <Block>
-//         <Notification color="danger">
-//           All of this are evently spaced
-//         </Notification>
-//       </Block>
-//       <Block>
-//         <Notification color="warning">
-//           This one does not generate extra margin at the bottom
-//         </Notification>
-//       </Block>
-//     </React.Fragment>
-//   </Box>
-//   </>
-// );
-//     }
+      );
+    }
 
-import Carousel from 'react-bootstrap/Carousel';
 
-const Recycle = () => {
 
-  return (
-    <Carousel style={{ width: '50rem '}} variant="dark">
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="../images/recycle.png"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-  );
-}
-
-export default Recycle;
   
 
     
