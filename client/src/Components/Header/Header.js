@@ -19,6 +19,11 @@ import Auth from '../utils/auth';
 
 
 const Header = () => {
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
+  
     const [menuCollapse, setMenuCollapse] = useState(false)
   const menuIconClick = () => {
 
@@ -72,8 +77,8 @@ const Header = () => {
           <MenuItem active={true} icon={<FiLogIn />}> <Link to="/login"> Login</Link></MenuItem>
             </Menu>
 
-            <Menu iconShape="square">
-              <MenuItem active={true} icon={<FiLogOut />}><Link to="/logout">Logout</Link></MenuItem>
+            <Menu  iconShape="square">
+              <MenuItem onClick={Auth.logout} active={true} icon={<FiLogOut />}> Logout</MenuItem>
             </Menu>
           </SidebarFooter>
         </ProSidebar>
