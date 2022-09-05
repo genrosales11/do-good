@@ -5,9 +5,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import Button from 'react-bootstrap/Button';
-import plastic from "../images/plastic.png";
-import can from "../images/can.png";
-import metal from "../images/metal.png"
+import local from "../images/local.png";
+import cycle from "../images/cycle.png";
+import water from "../images/water.png"
 
 
 export default function Transportation() {
@@ -18,13 +18,13 @@ export default function Transportation() {
     {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
    <Col sm={ 4}>
     <Card style={{ width: '18rem' }}>
-       <Card.Img variant="top" src={{ plastic }}/>
+       <Card.Img variant="top" src={local}/>
        <Card.Body>
-       <Card.Title>Incorporate walking or biking</Card.Title>
+       <Card.Title>Consume local and seasonal products</Card.Title>
          <Card.Text>
-         Incorporate walking or biking to some of your regular short-trip destinations.
-          In most instances, you can walk a mile in less than 20 minutes. This is a great way to
-           add exercise to your busy schedule.
+         By eating local, seasonal foods you can help reduce the environmental costs associated with your food. 
+         Local produce is more likely to be ripened on the farm before being harvested and delivered. This food is fresher, 
+         tastes better and is more nutritious.
          </Card.Text>
          <Button variant="info"> DONE </Button>
        </Card.Body>
@@ -34,11 +34,12 @@ export default function Transportation() {
      
   <Col sm={ 4 }>
      <Card style={{ width: '18rem' }}>
-       <Card.Img variant="top" src={{ can }} />
+       <Card.Img variant="top" src={cycle} />
        <Card.Body>
-       <Card.Title>Save Electricitty</Card.Title>
+       <Card.Title>Cycle or use public transport</Card.Title>
          <Card.Text>
-         Turn off lights and unplug devices when you’re not using them. Every little action adds up!
+         Bicycle riding uses minimal fossil fuels and is a pollution-free mode of transport. Bikes reduce the need to build, service and dispose of cars.
+          Bicycle riding conserves roadway and residential space, thereby providing opportunities for less concrete and more plant life in urban areas.
          </Card.Text>
          <Button variant="info"> DONE</Button>
        </Card.Body>
@@ -48,13 +49,11 @@ export default function Transportation() {
   
      <Col sm={ 4 }>
      <Card style={{ width: '18rem'}}>
-       <Card.Img variant="top" src={{ metal }} />
+       <Card.Img variant="top" src={water} />
        <Card.Body>
-         <Card.Title>Recycle Metal</Card.Title>
+         <Card.Title>Turn off the water while you brush your teeth or clean the dishes</Card.Title>
          <Card.Text>
-         steel recycling efforts save 75 percent of the overall energy used in production from
-          raw materials. This has huge benefits in the fight to save natural resources, and prevent 
-          excess greenhouse gas emissions 
+         ust by turning off the tap while you brush your teeth in the morning and before bedtime, you can save up to 8 gallons of water
          </Card.Text>
         <Button variant="info"> DONE </Button>
    
