@@ -1,15 +1,17 @@
-body {
+/* body {
     position: relative;
 }
 
 #aboutCards {
     position: relative;
-}
+} */
 
-Container {
+.container {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
+    
 }
 
 Card {
