@@ -77,9 +77,12 @@ const resolvers = {
         //         return userGoal.create({ goalId, userId });
         //     },
  
-        //     removeGoal: async (parent, { gaolId, userId }) => {
-        //         return userGoal.findOneAndDelete({ goalId, userId });
-        //     },
+        //     removeGoal: async (parent, { goalId, userId }) => {
+        //     console.log("User id: " + userId + "goal Id" +  goalId);
+        // may have to change this since goal only had _id
+        //     const user = await User.findByIdAndUpdate(userId, { $pull : { goal : {_id : goalId } } });
+        //     return user;
+        // },
 
 };
 module.exports = resolvers
