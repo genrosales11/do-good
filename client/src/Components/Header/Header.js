@@ -8,13 +8,13 @@ import { TbLayoutSidebarRightCollapse, TbLayoutSidebarRightExpand } from "react-
 import turtle from "../../Components/images/turtle.png"
 import "react-pro-sidebar/dist/css/styles.css";
 import "./Header.css";
-import "./Home.css";
-import "./Category.css";
-import "./History.css";
-import "./About.css";
-import "./Login.css";
-import "./Signup.css";
-import "./Recycle.css"
+// import "./Home.css";
+// import "./Category.css";
+// import "./History.css";
+// import "./About.css";
+// import "./Login.css";
+// import "./Signup.css";
+// import "./Recycle.css"
 import Auth from '../utils/auth';
 
 
