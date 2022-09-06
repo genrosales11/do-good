@@ -58,16 +58,31 @@ const resolvers = {
         updateTask: async (parent, {taskId, userId, complete}) => {
             var user = await User.findById(userId);
             var newTasks = user.tasks;
-            for( task in user.tasks) {
+            console.log(user);
+            // map instead of for/in
+            // task find by id/ use query in mutation?
+
+            const newUserTask = user.tasks.map( (task) => {
+                // if (task.taskId.toString === taskId)
+                // so far --> can take variable given id, can get _id for matching, but doesn't match with toString or equal
+                if (task.taskId.equals(taskId))
+                {
+                    console.log("found it");
+                }
                 console.log(task._id);
                 console.log(taskId);
-                if (task._id == taskId) {
-                    // needs to set complete to true
-                    console.log(task._id);
-                    console.log(taskId);
-                    task.complete = true;
-                }
-            }
+            });
+            // console.log(newUserTask);
+            // for( task in user.tasks) {
+            //     console.log(task.taskId);
+            //     console.log(taskId);
+            //     if (task._id == taskId) {
+            //         // needs to set complete to true
+            //         console.log(task._id);
+            //         console.log(taskId);
+            //         task.complete = true;
+            //     }
+            // }
             // ...user.tasks,
             return User.findByIdAndUpdate(userId, {$set : {tasks: newTasks}}, { new: true });
         },
