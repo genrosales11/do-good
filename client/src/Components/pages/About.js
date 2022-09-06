@@ -10,8 +10,8 @@ import jamesBennett from "../images/jamesBennett.png";
 export default function About() {
   
     return (
-      <body className="data-spy='scroll' data-target='#aboutCards'">
-      <Container>
+      <div>
+      <Container className="container">
         <div id="aboutCards" className="row no-gutters">
         <Col className="col-sm">
         <Card style={{ height: '18rem', width: '18rem' }}>
@@ -63,6 +63,6 @@ export default function About() {
         </Col>
         </div>
       </Container>
-     </body>
+     </div>
     );
   }
