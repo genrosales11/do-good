@@ -37,20 +37,26 @@ type Query {
 type Mutation{
   login(email: String!, password: String!): Auth
   addUser(
-    firstName: String!
-    lastName: String!
-    username: String!
-    email: String!
-    password: String!
-  ): Auth
-  updateTask(_id: ID!, userId: ID!, complete: Boolean!): User
-  removeTask(taskId: ID!, userId: ID!): User
+      firstName: String!,
+      lastName: String!,
+      email: String!,
+      password: String!
+   ): Auth
+  removeTask(taskId: ID!, userID: ID!): User
 } 
 `;
 
 module.exports = typeDefs;
-// need to add how it gets an id and value (how are these different?) was on64
-    // needs to be only for user, not globally updated was on 67
+ //   firstName: String!
+ //   lastName: String!
+ //   username: String!
+ //   email: String!
+ //   password: String!
+ // ): Auth
+ // updateTask(_id: ID!, userId: ID!, complete: Boolean!): User
+ // removeTask(taskId: ID!, userId: ID!): User
+//} 
+//`;
 
     // type History {
     //   _id: ID
