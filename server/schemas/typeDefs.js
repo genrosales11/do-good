@@ -41,7 +41,7 @@ type Mutation{
       email: String!,
       password: String!
    ): Auth
-  updateTask(_id: ID!, userId: ID!, complete: Boolean!): User
+  updateTask(taskId: ID!, userId: ID!, complete: Boolean!): User
   removeTask(taskId: ID!, userID: ID!): User
 } 
 `;
