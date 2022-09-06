@@ -43,9 +43,7 @@ const resolvers = {
                 return {
                     token, user
                 }
-
             }
-            throw new AuthenticationError('incorrect password')
             // bounces back/ gives error
         },
  

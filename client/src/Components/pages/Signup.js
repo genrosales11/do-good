@@ -13,8 +13,8 @@ import InputGroup from 'react-bootstrap/InputGroup';
 const Signup = () => {
     const [formState, setFormState] = useState({
       
-      firstName: '',
-      lastName:'',
+      firstname: '',
+      lastname:'',
       email: '',
       password: '',
     });
@@ -57,14 +57,14 @@ const Signup = () => {
         Login
         <InputGroup className="mb-3">
         <InputGroup.Text>First and last name</InputGroup.Text>
-        <Form.Control aria-label="First name"  onChange={handleChange} type="firstname" name="firstName" />
-        <Form.Control aria-label="Last name" onChange={handleChange} type="lastname" name="lastName"  />
+        <Form.Control aria-label="First name"  onChange={handleChange} type="firstname" name="firstname" />
+        <Form.Control aria-label="Last name" onChange={handleChange} type="lastname" name="lastname"  />
       </InputGroup>
     
        
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control onChange={handleChange} type="email" name="email" placeholder="Enter email" />
+          <Form.Control  type="email" name="email" placeholder="Enter email" />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
