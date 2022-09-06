@@ -21,8 +21,6 @@ const taskSchema = new Schema({
         type: Boolean,
         default: false,
     },
-    
-    // Do we need to take in a category or do something else?
 });
 
 const Task = model('Task', taskSchema);

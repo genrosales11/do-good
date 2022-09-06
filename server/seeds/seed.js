@@ -10,7 +10,7 @@ db.once('open', async () => {
     await User.deleteMany({});
 
     // Creating our users
-    await User.create(userSeeds);
+    // await User.create(userSeeds);
     await Task.create(taskSeeds);
 
   } catch (err) {

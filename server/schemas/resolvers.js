@@ -58,14 +58,18 @@ const resolvers = {
         updateTask: async (parent, {taskId, userId, complete}) => {
             var user = await User.findById(userId);
             var newTasks = user.tasks;
-            for( task in tasks) { //  task in tasks) {
+            for( task in user.tasks) {
+                console.log(task._id);
+                console.log(taskId);
                 if (task._id == taskId) {
-                    // do some update to the task
-                    // set complete to true
-                    complete = true;
+                    // needs to set complete to true
+                    console.log(task._id);
+                    console.log(taskId);
+                    task.complete = true;
                 }
             }
-            return User.findByIdAndUpdate(userId, {$set : {tasks: newTasks}});
+            // ...user.tasks,
+            return User.findByIdAndUpdate(userId, {$set : {tasks: newTasks}}, { new: true });
         },
     },   
    
