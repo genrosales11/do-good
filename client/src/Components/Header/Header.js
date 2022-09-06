@@ -41,7 +41,7 @@ const Header = () => {
           <div className="logotext">
               {}
               <p>{menuCollapse ?  "🌍DO-GOOD" :  "🌍DO-GOOD"}</p>
-              <p>{menuCollapse ?  <img class="self" src={turtle} alt="Self" /> :  <img class="self" src={turtle} alt="Self" />}</p>
+              <p>{menuCollapse ?  <img class="self" src={turtle} alt="Self" /> :  <img className="self" src={turtle} alt="Self" />}</p>
             </div>
             <div className="closemenu" onClick={menuIconClick}>
                 {}
