@@ -86,6 +86,7 @@ import Button from 'react-bootstrap/Button';
 import plastic from "../images/plastic.png";
 import can from "../images/can.png";
 import metal from "../images/metal.png"
+import { Link } from 'react-router-dom'
 
 
 export default function Category() {
@@ -103,7 +104,7 @@ export default function Category() {
          Plastics recycling keeps still-useful materials out of landfills and encourages businesses
           to develop new and innovative products made from them.
          </Card.Text>
-         <Button variant="info"> DONE </Button>
+         <Button variant="info"> <Link to="/history">DONE</Link></Button>
        </Card.Body>
      </Card>
      </Col>
@@ -117,7 +118,7 @@ export default function Category() {
          <Card.Text>
          Recycling aluminum saves up to 95% of the energy wasted when manufacturing cans from new, raw materials.
          </Card.Text>
-         <Button variant="info"> DONE</Button>
+         <Button variant="info"> <Link to="/history">DONE</Link></Button>
        </Card.Body>
      </Card>
      </Col>
@@ -133,7 +134,8 @@ export default function Category() {
           raw materials. This has huge benefits in the fight to save natural resources, and prevent 
           excess greenhouse gas emissions 
          </Card.Text>
-        <Button variant="info"> DONE </Button>
+        {/* <Button variant="info"> DONE </Button> */}
+        <Button variant="info"> <Link to="/history">DONE</Link></Button>
    
        </Card.Body>
      </Card>
