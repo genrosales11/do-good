@@ -7,7 +7,8 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import local from "../images/local.png";
 import cycle from "../images/cycle.png";
-import water from "../images/water.png"
+import water from "../images/water.png";
+import { Link } from 'react-router-dom'
 
 
 export default function Transportation() {
@@ -26,7 +27,7 @@ export default function Transportation() {
          Local produce is more likely to be ripened on the farm before being harvested and delivered. This food is fresher, 
          tastes better and is more nutritious.
          </Card.Text>
-         <Button variant="info"> DONE </Button>
+         <Button variant="info"> <Link to="/history">DONE</Link></Button>
        </Card.Body>
      </Card>
      </Col>
@@ -41,7 +42,7 @@ export default function Transportation() {
          Bicycle riding uses minimal fossil fuels and is a pollution-free mode of transport. Bikes reduce the need to build, service and dispose of cars.
           Bicycle riding conserves roadway and residential space, thereby providing opportunities for less concrete and more plant life in urban areas.
          </Card.Text>
-         <Button variant="info"> DONE</Button>
+         <Button variant="info"> <Link to="/history">DONE</Link></Button>
        </Card.Body>
      </Card>
      </Col>
@@ -55,7 +56,7 @@ export default function Transportation() {
          <Card.Text>
          ust by turning off the tap while you brush your teeth in the morning and before bedtime, you can save up to 8 gallons of water
          </Card.Text>
-        <Button variant="info"> DONE </Button>
+         <Button variant="info"> <Link to="/history">DONE</Link></Button>
    
        </Card.Body>
      </Card>
