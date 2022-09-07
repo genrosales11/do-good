@@ -12,6 +12,11 @@ type Task {
   taskValue: Int
   complete: Boolean
 }
+input TaskInput {
+  taskText: String
+  taskValue: Int
+  complete: Boolean
+}
 
  type User {
   _id: ID
@@ -40,7 +45,9 @@ type Mutation{
       lastName: String!,
       email: String!,
       password: String!
+      
    ): Auth
+   addTask(userId: ID!, task: TaskInput): User
   updateTask(taskId: ID!, userId: ID!, complete: Boolean!): User
   removeTask(taskId: ID!, userID: ID!): User
 } 

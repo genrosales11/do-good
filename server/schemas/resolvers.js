@@ -54,6 +54,27 @@ const resolvers = {
             const user = await User.findByIdAndUpdate(userId, { $pull : { tasks : {_id : taskId } } });
             return user;
         },
+        addTask: async (parent, {userId, task}) => {
+        try{
+            console.log(userId, task)
+            const user = await User.findByIdAndUpdate({
+                _id: userId
+            }, {
+                $push:{tasks:task}
+            },{
+                new: true
+            })
+
+            
+         
+            return user
+
+        }
+        catch(error){
+            console.log(error)
+            return error
+        }
+        },
 
         updateTask: async (parent, {taskId, userId, complete}) => {
             var user = await User.findById(userId);
