@@ -46,14 +46,14 @@ const Signup = () => {
  
 
   return (
-<div>
+<div style={{ backgroundColor: "#89cff0", display: 'flex',  justifyContent:'center', alignItems:'center', height: '600px', width: '1400px', padding: "90px 120px"}}>
   
 {data ? (
      <p>
      Success!
    </p>
 
-  ) : ( <Form className='loginStyle'>
+  ) : ( <Form className='loginStyle' >
         Login
         <InputGroup className="mb-3">
         <InputGroup.Text>First and last name</InputGroup.Text>
