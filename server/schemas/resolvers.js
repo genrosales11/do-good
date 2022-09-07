@@ -54,18 +54,58 @@ const resolvers = {
             const user = await User.findByIdAndUpdate(userId, { $pull : { tasks : {_id : taskId } } });
             return user;
         },
+        addTask: async (parent, {userId, task}) => {
+        try{
+            console.log(userId, task)
+            const user = await User.findByIdAndUpdate({
+                _id: userId
+            }, {
+                $push:{tasks:task}
+            },{
+                new: true
+            })
+
+            
+         
+            return user
+
+        }
+        catch(error){
+            console.log(error)
+            return error
+        }
+        },
 
         updateTask: async (parent, {taskId, userId, complete}) => {
             var user = await User.findById(userId);
             var newTasks = user.tasks;
-            for( task in tasks) { //  task in tasks) {
-                if (task._id == taskId) {
-                    // do some update to the task
-                    // set complete to true
-                    complete = true;
+            console.log(user);
+            // map instead of for/in
+            // task find by id/ use query in mutation?
+
+            const newUserTask = user.tasks.map( (task) => {
+                // if (task.taskId.toString === taskId)
+                // so far --> can take variable given id, can get _id for matching, but doesn't match with toString or equal
+                if (task.taskId.equals(taskId))
+                {
+                    console.log("found it");
                 }
-            }
-            return User.findByIdAndUpdate(userId, {$set : {tasks: newTasks}});
+                console.log(task._id);
+                console.log(taskId);
+            });
+            // console.log(newUserTask);
+            // for( task in user.tasks) {
+            //     console.log(task.taskId);
+            //     console.log(taskId);
+            //     if (task._id == taskId) {
+            //         // needs to set complete to true
+            //         console.log(task._id);
+            //         console.log(taskId);
+            //         task.complete = true;
+            //     }
+            // }
+            // ...user.tasks,
+            return User.findByIdAndUpdate(userId, {$set : {tasks: newTasks}}, { new: true });
         },
     },   
    
