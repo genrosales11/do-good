@@ -13,9 +13,6 @@ db.once('open', async () => {
     await User.create(userSeeds);
     await Task.create(taskSeeds);
 
-    // mass create tasks? are we assigning them to anywhere here?
-    // do we need to give all tasks to users here? is is the access through the model enough?
-
   } catch (err) {
     console.error(err);
     process.exit(1);

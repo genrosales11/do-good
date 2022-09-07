@@ -1,23 +1,140 @@
 [
     {
+        "_id":"00164fa9553765be1ea8801d",
         "firstName": "Damien",
         "lastName": "Armstrong",
         "username": "pirosvs",
         "email": "mail@mail.com",
-        "password": "passpass25"
+        "password": "passpass25",
+        "tasks":[
+            {
+                "taskText": "Pick up trash around your neighborhood",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Pick up trash by your nearest body of water",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Pick up trash elsewhere",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Check out your city's recycling policy",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Create a recycling chart for your house or workplace",
+                "taskValue": "2"
+            },
+            {
+                "taskText": "Rinse out glass and cans so they can be recycled",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Take bike instead of car",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Take public transit instead of car",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Share a ride with someone instead of each going separately",
+                "taskValue": "1"
+            }
+        ]
     },
     {
+        "_id" : "00164fa9553765be1ea8801e",
         "firstName": "Rosy",
         "lastName": "Shoreline",
         "username": "strawberrysheep",
         "email": "berrysheep@mail.com",
-        "password": "password2345"
+        "password": "password2345",
+        "tasks":[
+            {
+                "taskText": "Pick up trash around your neighborhood",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Pick up trash by your nearest body of water",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Pick up trash elsewhere",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Check out your city's recycling policy",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Create a recycling chart for your house or workplace",
+                "taskValue": "2"
+            },
+            {
+                "taskText": "Rinse out glass and cans so they can be recycled",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Take bike instead of car",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Take public transit instead of car",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Share a ride with someone instead of each going separately",
+                "taskValue": "1"
+            }
+        ]
     },
     {
+        "_id":"00164fa9553765be1ea8801f",
         "firstName": "Alana",
         "lastName": "Calico",
         "username": "branchingoff",
         "email": "branching@mail.com",
-        "password": "wordword0987"
+        "password": "wordword0987",
+        "tasks":[
+            {
+                "taskText": "Pick up trash around your neighborhood",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Pick up trash by your nearest body of water",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Pick up trash elsewhere",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Check out your city's recycling policy",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Create a recycling chart for your house or workplace",
+                "taskValue": "2"
+            },
+            {
+                "taskText": "Rinse out glass and cans so they can be recycled",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Take bike instead of car",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Take public transit instead of car",
+                "taskValue": "1"
+            },
+            {
+                "taskText": "Share a ride with someone instead of each going separately",
+                "taskValue": "1"
+            }
+        ]
     }
 ]

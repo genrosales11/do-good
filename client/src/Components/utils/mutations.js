@@ -79,8 +79,8 @@ export const ADD_USER = gql`
 `;
 
 // are our removes in mutations? or in reducers?
-export const REMOVE_TASK = gql`
-`;
+// export const REMOVE_TASK = gql`
+// `;
 
-export const REMOVE_GOAL = gql`
-`;
+// export const REMOVE_GOAL = gql`
+// `;

@@ -15,11 +15,15 @@ import "./About.css";
 import "./Login.css";
 import "./Signup.css";
 import "./Recycle.css"
-
-
+import Auth from '../utils/auth';
 
 
 const Header = () => {
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
+  
     const [menuCollapse, setMenuCollapse] = useState(false)
   const menuIconClick = () => {
 
@@ -37,7 +41,7 @@ const Header = () => {
           <div className="logotext">
               {}
               <p>{menuCollapse ?  "🌍DO-GOOD" :  "🌍DO-GOOD"}</p>
-              <p>{menuCollapse ?  <img class="self" src={turtle} alt="Self" /> :  <img class="self" src={turtle} alt="Self" />}</p>
+              <p>{menuCollapse ?  <img class="self" src={turtle} alt="Self" /> :  <img className="self" src={turtle} alt="Self" />}</p>
             </div>
             <div className="closemenu" onClick={menuIconClick}>
                 {}
@@ -53,10 +57,15 @@ const Header = () => {
               <MenuItem active={true} icon={<FiHome />} >
               <Link to="/">Home</Link>
               </MenuItem>
-              <MenuItem active={true} icon={<FaList />}> <Link to="/category">Category</Link></MenuItem>
-              <MenuItem active={true} icon={<FaHistory />}><Link to="/history">History</Link></MenuItem>
+              {Auth.loggedIn()&&(
+                <>
+                  <MenuItem active={true} icon={<FaList />}> <Link to="/category">Category</Link></MenuItem>
+                  <MenuItem active={true} icon={<FaHistory />}><Link to="/history">History</Link></MenuItem>
+                
+                  <MenuItem active={true} icon={<RiPencilLine />}> <Link to="/about">About Us</Link></MenuItem>
+                  </>
+              )}
             
-              <MenuItem active={true} icon={<RiPencilLine />}> <Link to="/about">About Us</Link></MenuItem>
            
             </Menu>
           </SidebarContent>
@@ -68,8 +77,8 @@ const Header = () => {
           <MenuItem active={true} icon={<FiLogIn />}> <Link to="/login"> Login</Link></MenuItem>
             </Menu>
 
-            <Menu iconShape="square">
-              <MenuItem active={true} icon={<FiLogOut />}><Link to="/logout">Logout</Link></MenuItem>
+            <Menu  iconShape="square">
+              <MenuItem onClick={Auth.logout} active={true} icon={<FiLogOut />}> Logout</MenuItem>
             </Menu>
           </SidebarFooter>
         </ProSidebar>

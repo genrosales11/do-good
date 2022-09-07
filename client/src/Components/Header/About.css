@@ -1,0 +1,25 @@
+/* body {
+    position: relative;
+}
+
+#aboutCards {
+    position: relative;
+} */
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+
+Card {
+    padding: 2rem;
+
+}
+
+Card.Img {
+    border-radius: 50;
+    border: 5px;
+}
