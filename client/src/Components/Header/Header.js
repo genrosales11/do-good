@@ -72,14 +72,19 @@ const Header = () => {
           <SidebarFooter>
 
 
-          <Menu iconShape="square">
+{Auth.loggedIn() ? (
+  <Menu  iconShape="square">
+  <MenuItem onClick={Auth.logout} active={true} icon={<FiLogOut />}> Logout</MenuItem>
+</Menu>
+) : (
+<Menu iconShape="square">
           <MenuItem active={true} icon={<FiLogIn />}> <Link to="/signup"> Signup</Link></MenuItem>
           <MenuItem active={true} icon={<FiLogIn />}> <Link to="/login"> Login</Link></MenuItem>
             </Menu>
+)}
+          
 
-            <Menu  iconShape="square">
-              <MenuItem onClick={Auth.logout} active={true} icon={<FiLogOut />}> Logout</MenuItem>
-            </Menu>
+            
           </SidebarFooter>
         </ProSidebar>
       </div>

@@ -38,13 +38,18 @@ const resolvers = {
  
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email })
-            if (user.isCorrectPassword(password)) {
+            console.log("user",user)
+            // 1st
+            const allow = await user.isCorrectPassword(password)
+            if (allow) {
                 const token = signToken(user)
+                console.log("token", token)
                 return {
                     token, user
                 }
 
             }
+            console.log("errorrrrrr")
             throw new AuthenticationError('incorrect password')
             // bounces back/ gives error
         },
@@ -77,22 +82,23 @@ const resolvers = {
         },
 
         updateTask: async (parent, {taskId, userId, complete}) => {
-            var user = await User.findById(userId);
-            var newTasks = user.tasks;
-            console.log(user);
-            // map instead of for/in
-            // task find by id/ use query in mutation?
+            // var user = await User.findById(userId);
+            // var newTasks = user.tasks;
+            // console.log(user);
+            // // map instead of for/in
+            // // task find by id/ use query in mutation?
 
-            const newUserTask = user.tasks.map( (task) => {
-                // if (task.taskId.toString === taskId)
-                // so far --> can take variable given id, can get _id for matching, but doesn't match with toString or equal
-                if (task.taskId.equals(taskId))
-                {
-                    console.log("found it");
-                }
-                console.log(task._id);
-                console.log(taskId);
-            });
+            // const newUserTask = user.tasks.map( (task) => {
+            //     // if (task.taskId.toString === taskId)
+            //     // so far --> can take variable given id, can get _id for matching, but doesn't match with toString or equal
+            //     if (task.taskId.equals(taskId))
+            //     {
+            //         console.log("found it");
+            //     }
+            //     console.log(task._id);
+            //     console.log(taskId);
+            // });
+            return await Task.findByIdAndUpdate(taskId, {complete: true}, {new: true})
             // console.log(newUserTask);
             // for( task in user.tasks) {
             //     console.log(task.taskId);
@@ -105,7 +111,7 @@ const resolvers = {
             //     }
             // }
             // ...user.tasks,
-            return User.findByIdAndUpdate(userId, {$set : {tasks: newTasks}}, { new: true });
+            //return User.findByIdAndUpdate(userId, {$set : {tasks: newTasks}}, { new: true });
         },
     },   
    
