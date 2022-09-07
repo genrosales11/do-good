@@ -43,7 +43,7 @@ const Login = () => {
     });
   };
   return (
-
+<div style={{ backgroundColor: "#89cff0", display: 'flex',  justifyContent:'center', alignItems:'center', height: '600px', width: '1400px', padding: "90px 120px"}}>
     <Form className='loginStyle'>
       Login
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -65,7 +65,7 @@ const Login = () => {
         Submit
       </Button>
     </Form>
-
+    </div>
   );
 };
 
