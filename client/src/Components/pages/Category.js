@@ -122,7 +122,7 @@ export default function App() {
     <div style={{ display: 'block', width: 1300, padding: 30, backgroundColor: 'black'}}>
       <h4 style={{ color: 'white' }}>Categories</h4>
       <Carousel>
-        <Carousel.Item interval={600} >
+        <Carousel.Item >
           <img
             className="d-block w-60" src={recycle} style={{ height: 505 }}
             alt="recycle"
@@ -134,7 +134,7 @@ export default function App() {
          needed to create new products, lessening the overall impact on natural resources.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={600}>
+        <Carousel.Item>
           <img
             className="d-block w-60" src={trash} style={{ height: 555 }}
             alt="trash"/>
@@ -145,7 +145,7 @@ export default function App() {
                litter that doesn't end up in the ocean</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={500}>
+        <Carousel.Item >
           <img
             className="d-block w-60" src={transportation} style={{ height: 505 }}
             alt="trash"/>
