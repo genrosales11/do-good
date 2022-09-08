@@ -29,6 +29,8 @@ This app will provide you task to complete throught your day, save energy, ride 
 ## GIF of site in action
 
 
+<img width="1319" alt="Screen Shot 2022-09-07 at 5 13 33 PM" src="https://user-images.githubusercontent.com/107210172/189006452-de487938-e536-4137-9cf1-e815a0f80f23.png">
+
 
 
 
