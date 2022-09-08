@@ -37,14 +37,20 @@ app is designed to improve recycling knowledge and overall help reduce carbon fo
 ![GIF of site in action](https://drive.google.com/file/d/1SP5gTQG4CARd1Nl4gzZ1tjjZVXxyONOC/view)
 
 
-## Usage 
+## Installation 
+
+ * Install MongoDB
+ 
 ``
 npm i 
  ``
  
 ``npm run start 
 ``
-## Features
+## Usage 
+
+Create an account to keep track of your good deeds
+
 
 ## Authors 
 
@@ -67,6 +73,7 @@ npm i
 
 * <span>[Github](https://github.com/genrosales11/do-good)</span>
 * <span>[LinkedIn](https://www.linkedin.com/in/genesis-rosales-58a55015a/)</span>
-## Questions
 
+## Questions
+Reach out to Authors
 
