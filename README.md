@@ -2,7 +2,11 @@
 This application is a force for good in the world. 
 
 ## Description
-This app will provide you task to complete throught your day, save energy, ride your bike to work and do good. Use our history collection to keep track of your deaily goods.
+we know that sometimes the littlest efforts add up to effect big change. The Do-Good app offers simple, quick, and convenient ways to take action in your everyday life — to make goodness a little more accessible for you, for others, and for the planet. 
+
+### What it does:
+
+app is designed to improve recycling knowledge and overall help reduce carbon footprint. Our app has three categories that users can choose from and get task done during the day
 
 ## License: <span>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</span>
 
