@@ -1,14 +1,9 @@
 import { useMutation } from '@apollo/client';
 import React, {useState} from 'react';
-//  import { Link } from 'react-router-dom';
-//  import { useMutation } from '@apollo/client';
-
 import Button from 'react-bootstrap/Button';
  import Form from 'react-bootstrap/Form';
 import { LOGIN } from '../utils/mutations';
  import Auth from '../utils/auth';
-
-
 
 
 const Login = () => {
