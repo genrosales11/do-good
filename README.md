@@ -1,10 +1,7 @@
 ### Do-good
 This application is a force for good in the world. 
 
-
 ![Untitled design (1)](https://user-images.githubusercontent.com/107210172/189009576-4576379d-5395-4574-8940-068043442ccc.png)
-
-
 
 ## Description
 we know that sometimes the littlest efforts add up to effect big change. The Do-Good app offers simple, quick, and convenient ways to take action in your everyday life — to make goodness a little more accessible for you, for others, and for the planet. 
@@ -39,13 +36,14 @@ app is designed to improve recycling knowledge and overall help reduce carbon fo
 
 ![GIF of site in action](https://drive.google.com/file/d/1SP5gTQG4CARd1Nl4gzZ1tjjZVXxyONOC/view)
 
-<img width="1319" alt="Screen Shot 2022-09-07 at 5 13 33 PM" src="https://user-images.githubusercontent.com/107210172/189006452-de487938-e536-4137-9cf1-e815a0f80f23.png">
-
-
-
 
 ## Usage 
-
+``
+npm i 
+ ``
+ 
+``npm run start 
+``
 ## Features
 
 ## Authors 
