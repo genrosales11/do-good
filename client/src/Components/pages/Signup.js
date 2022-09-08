@@ -54,7 +54,7 @@ const Signup = () => {
    </p>
 
   ) : ( <Form className='loginStyle' >
-        Login
+        Sign Up
         <InputGroup className="mb-3">
         <InputGroup.Text>First and last name</InputGroup.Text>
         <Form.Control aria-label="First name"  onChange={handleChange} type="firstname" name="firstName" />
@@ -66,7 +66,7 @@ const Signup = () => {
           <Form.Label>Email address</Form.Label>
           <Form.Control onChange={handleChange} type="email" name="email" placeholder="Enter email" />
           <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
+           
           </Form.Text>
         </Form.Group>
   
@@ -74,11 +74,9 @@ const Signup = () => {
           <Form.Label> Create a Password</Form.Label>
           <Form.Control onChange={handleChange} type="password" name="password"  placeholder="Password" />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
+      
         <Button  onClick={handleFormSubmit} variant="primary" type="submit">
-          Submit
+          Sign Up
         </Button>
       </Form>
   
