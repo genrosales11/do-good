@@ -39,7 +39,27 @@ This app will provide you task to complete throught your day, save energy, ride 
 ## Features
 
 ## Authors 
+<span>[Do-Good](https://fast-plateau-87786.herokuapp.com/)</span>
 
+### Damien Armstrong:
+
+* <span>[Github](https://github.com/pirosvs)</span>
+* <span>[LinkedIn](https://www.linkedin.com/in/damien-armstrong-412319138/)</span>
+
+### David Nevarrete Ayala:
+
+*  <span>[Github](https://github.com/DNA601)</span>
+*  <span>[LinkedIn](https://www.linkedin.com/in/david-navarrete-ayala-31a09623a/)</span>
+
+### James Bennett:
+
+* <span>[Github](https://github.com/OnlyMeHere)</span>
+* <span>[LinkedIn](https://www.linkedin.com/in/jamesbennett1here/)</span>
+
+### Genesis Rosales:
+
+* <span>[Github](https://github.com/genrosales11/do-good)</span>
+* <span>[LinkedIn](https://www.linkedin.com/in/genesis-rosales-58a55015a/)</span>
 ## Questions
 
 
