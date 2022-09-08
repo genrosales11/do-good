@@ -1,6 +1,11 @@
 ### Do-good
 This application is a force for good in the world. 
 
+
+![Untitled design (1)](https://user-images.githubusercontent.com/107210172/189009576-4576379d-5395-4574-8940-068043442ccc.png)
+
+
+
 ## Description
 we know that sometimes the littlest efforts add up to effect big change. The Do-Good app offers simple, quick, and convenient ways to take action in your everyday life — to make goodness a little more accessible for you, for others, and for the planet. 
 
@@ -44,7 +49,6 @@ app is designed to improve recycling knowledge and overall help reduce carbon fo
 ## Features
 
 ## Authors 
-<span>[Do-Good](https://fast-plateau-87786.herokuapp.com/)</span>
 
 ### Damien Armstrong:
 
