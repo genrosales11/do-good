@@ -62,6 +62,14 @@ Create an account to keep track of your good deeds
 
 
 <img width="776" alt="Screen Shot 2022-09-07 at 6 20 59 PM" src="https://user-images.githubusercontent.com/107210172/189012641-9982520b-f847-40f2-8df1-77e113cd18ed.png">
+ 
+## Code Snippets 
+
+* Subdoc implementation of tasks
+Validation inside model
+
+
+<img width="776" alt="Screen Shot 2022-09-07 at 6 20 59 PM" src="https://user-images.githubusercontent.com/107210172/189013252-3d380512-7844-4a9f-9d73-080d13bb7ac2.png">
 
 ## Authors 
 
