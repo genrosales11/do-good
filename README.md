@@ -74,6 +74,9 @@ Validation inside model
 
 <img width="838" alt="Screen Shot 2022-09-07 at 6 28 30 PM" src="https://user-images.githubusercontent.com/107210172/189013394-720fbd26-413d-4b38-8ad6-3f33a26d4bd5.png">
 
+### Test 
+
+*Testing was done using GraphQL.
 
 ## Authors 
 
@@ -98,5 +101,5 @@ Validation inside model
 * <span>[LinkedIn](https://www.linkedin.com/in/genesis-rosales-58a55015a/)</span>
 
 ## Questions
-Reach out to Authors
+If you have any additional questions, feel free to reach out
 
