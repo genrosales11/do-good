@@ -7,9 +7,9 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import plastic from "../images/plastic.png";
 import can from "../images/can.png";
-import metal from "../images/metal.png"
-import { Link } from 'react-router-dom'
-
+import metal from "../images/metal.png";
+import { Link } from 'react-router-dom';
+import "../styles/Recycle.css";
 
 export default function Category() {
     return (

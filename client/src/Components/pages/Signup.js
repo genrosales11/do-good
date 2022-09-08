@@ -1,12 +1,10 @@
-
 import React, { useState } from 'react';
-  // import { Link } from 'react-router-dom';
-  import { useMutation } from '@apollo/client';
-  import { ADD_USER} from '../utils/mutations';
+import { useMutation } from '@apollo/client';
+import { ADD_USER} from '../utils/mutations';
 import Button from 'react-bootstrap/Button';
- import Form from 'react-bootstrap/Form';
+import Form from 'react-bootstrap/Form';
 import Auth from '../utils/auth';
-
+import "../styles/Signup.css";
 import InputGroup from 'react-bootstrap/InputGroup';
 
 
