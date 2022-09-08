@@ -6,7 +6,7 @@ import trash from "../images/trash.png";
 import transportation from "../images/cycle.png";
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom'
-
+import "../styles/Category.css";
   
 export default function App() {
   return (

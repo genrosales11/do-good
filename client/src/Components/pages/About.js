@@ -6,6 +6,7 @@ import genesisRosales from "../images/genesisRosales.png";
 import davidNavarreteAyala from "../images/davidNavarreteAyala.png";
 import damienArmstrong from "../images/damienArmstrong.png";
 import jamesBennett from "../images/jamesBennett.png";
+import "../styles/About.css";
 
 export default function About() {
   
