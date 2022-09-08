@@ -32,6 +32,7 @@ app is designed to improve recycling knowledge and overall help reduce carbon fo
 
 ## GIF of site in action
 
+![GIF of site in action](https://drive.google.com/file/d/1SP5gTQG4CARd1Nl4gzZ1tjjZVXxyONOC/view)
 
 <img width="1319" alt="Screen Shot 2022-09-07 at 5 13 33 PM" src="https://user-images.githubusercontent.com/107210172/189006452-de487938-e536-4137-9cf1-e815a0f80f23.png">
 
