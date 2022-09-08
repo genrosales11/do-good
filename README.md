@@ -71,6 +71,10 @@ Validation inside model
 
 <img width="776" alt="Screen Shot 2022-09-07 at 6 20 59 PM" src="https://user-images.githubusercontent.com/107210172/189013252-3d380512-7844-4a9f-9d73-080d13bb7ac2.png">
 
+
+<img width="838" alt="Screen Shot 2022-09-07 at 6 28 30 PM" src="https://user-images.githubusercontent.com/107210172/189013394-720fbd26-413d-4b38-8ad6-3f33a26d4bd5.png">
+
+
 ## Authors 
 
 ### Damien Armstrong:
