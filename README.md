@@ -34,7 +34,7 @@ app is designed to improve recycling knowledge and overall help reduce carbon fo
 
 ## GIF of site in action
 
-![GIF of site in action](https://drive.google.com/file/d/1SP5gTQG4CARd1Nl4gzZ1tjjZVXxyONOC/view)
+![gif](/video/reactApp.gif)
 
 
 ## Installation 
