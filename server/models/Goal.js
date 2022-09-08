@@ -1,4 +1,4 @@
-// Goal ID, goal text, goal value
+
 
 const { Schema, model } = require('mongoose');
 

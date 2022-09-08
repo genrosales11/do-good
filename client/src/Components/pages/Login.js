@@ -6,6 +6,8 @@ import { LOGIN } from '../utils/mutations';
  import Auth from '../utils/auth';
 
 
+
+
 const Login = () => {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error, data }] = useMutation(LOGIN);
@@ -45,7 +47,7 @@ const Login = () => {
         <Form.Label>Email address</Form.Label>
         <Form.Control   value={formState.email} onChange={handleChange} type="email" name="email" placeholder="Enter email" />
         <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
+  
         </Form.Text>
       </Form.Group>
 
@@ -53,11 +55,9 @@ const Login = () => {
         <Form.Label>Password</Form.Label>
         <Form.Control   value={formState.password} onChange={handleChange} type="password" name="password" placeholder="Password" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
+  
       <Button onClick={handleFormSubmit} variant="primary" type="submit">
-        Submit
+        Login
       </Button>
     </Form>
     </div>

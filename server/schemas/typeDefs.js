@@ -54,37 +54,3 @@ type Mutation{
 `;
 
 module.exports = typeDefs;
- //   firstName: String!
- //   lastName: String!
- //   username: String!
- //   email: String!
- //   password: String!
- // ): Auth
- // updateTask(_id: ID!, userId: ID!, complete: Boolean!): User
- // removeTask(taskId: ID!, userId: ID!): User
-//} 
-//`;
-
-    // type History {
-    //   _id: ID
-    //   date: Date
-    //   tasks: [Task]
-    // }
-  
-    // type Goal {
-    //   _id: ID
-    //   goalText: String
-    //   goalValue: Int
-    // }
-  
-    // type Query {
-    //   categories: [Category]
-    //   history(): History takes in tasks marked complete per user
-    //   goal(_id: ID!): Goal
-    // }
-  
-    // type Mutation {
-    //   addTaskToHistory(taskId: ID!): History
-    //   addGoal(userId: ID!): Goal
-    //   removeGoal(userId: ID!): Goal
-    // }
