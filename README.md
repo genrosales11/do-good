@@ -51,6 +51,17 @@ npm i
 
 Create an account to keep track of your good deeds
 
+## User stoties
+
+* As a user, I want to be shown a list of tasks to pick from on the page of the category I’ve chosen
+
+
+<img width="416" alt="Screen Shot 2022-09-07 at 6 18 55 PM" src="https://user-images.githubusercontent.com/107210172/189012398-f62dc046-fe97-4328-9d6a-fc93a9fd6ba5.png">
+
+* As a User I want to see past good deeds that I have done over time
+
+
+<img width="776" alt="Screen Shot 2022-09-07 at 6 20 59 PM" src="https://user-images.githubusercontent.com/107210172/189012641-9982520b-f847-40f2-8df1-77e113cd18ed.png">
 
 ## Authors 
 
