@@ -1,10 +1,3 @@
-// export default function DataHistory() {
-//     return (
-//      <h1>History</h1>
-//     );
-//   }
-
-
 import Stack from 'react-bootstrap/Stack';
 
 function VerticalExample() {

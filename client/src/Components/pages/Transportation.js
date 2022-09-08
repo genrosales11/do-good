@@ -14,9 +14,8 @@ import { Link } from 'react-router-dom'
 export default function Transportation() {
     return (
  <Container>
+   {/* ---------------------- category cards ------- */}
       <Row>
-      
-    {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
    <Col sm={ 4}>
     <Card style={{ width: '18rem' }}>
        <Card.Img variant="top" src={local}/>
@@ -31,8 +30,6 @@ export default function Transportation() {
        </Card.Body>
      </Card>
      </Col>
-    {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
-     
   <Col sm={ 4 }>
      <Card style={{ width: '18rem' }}>
        <Card.Img variant="top" src={cycle} />
@@ -46,8 +43,6 @@ export default function Transportation() {
        </Card.Body>
      </Card>
      </Col>
-  {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
-  
      <Col sm={ 4 }>
      <Card style={{ width: '18rem'}}>
        <Card.Img variant="top" src={water} />

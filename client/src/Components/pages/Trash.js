@@ -1,9 +1,8 @@
 import React from "react";
- import Card from 'react-bootstrap/Card';
- import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 import Button from 'react-bootstrap/Button';
 import beach from "../images/beach.png";
 import parks from "../images/parks.png";
@@ -16,7 +15,7 @@ export default function Category() {
  <Container>
       <Row>
       
-    {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+   {/* ---------------------- category cards ------- */}
    <Col sm={ 4}>
     <Card style={{ width: '18rem' }}>
        <Card.Img variant="top" src={beach}/>
@@ -30,8 +29,6 @@ export default function Category() {
        </Card.Body>
      </Card>
      </Col>
-    {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
-     
   <Col sm={ 4 }>
      <Card style={{ width: '18rem' }}>
        <Card.Img variant="top" src={parks} />
@@ -45,8 +42,6 @@ export default function Category() {
        </Card.Body>
      </Card>
      </Col>
-  {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
-  
      <Col sm={ 4 }>
      <Card style={{ width: '18rem'}}>
        <Card.Img variant="top" src={awareness} />
